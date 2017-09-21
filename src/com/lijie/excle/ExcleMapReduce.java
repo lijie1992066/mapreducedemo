@@ -36,7 +36,7 @@ public class ExcleMapReduce extends Configured implements Tool {
 		
 		Job job = new Job(conf);
 		job.setJarByClass(ExcleMapReduce.class);
-		job.setJobName("Excel Record Reader ");
+		job.setJobName("Excel Record Reader");
 		job.setMapperClass(ExcleMap.class);
 		job.setMapOutputKeyClass(Text.class);
 		job.setMapOutputValueClass(Text.class);
